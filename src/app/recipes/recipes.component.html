@@ -1,0 +1,13 @@
+<div class="row">
+
+  <!-- Holds all recipes -->
+  <div class="col-lg-5 col-sm-5">
+    <rb-recipe-list (recipeSelected)="selectedRecipe = $event"></rb-recipe-list>
+  </div>
+
+  <!-- Holds selected recipe -->
+  <div class="col-lg-7 col-sm-7">
+    <rb-recipe-detail [selectedRecipe]="selectedRecipe"></rb-recipe-detail>
+  </div>
+
+</div>
